@@ -1,7 +1,7 @@
 package entities;
 
 public abstract class PlayerMulti {
-	protected String title;
+	public String title;
 public PlayerMulti(String title){
 	this.title = title;
 }
