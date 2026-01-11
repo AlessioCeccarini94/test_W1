@@ -19,7 +19,7 @@ public class Main {
 		file[4] = new Audio("audio2", 3, 4);
 
 		for (int i = 0; i < file.length;i++ ) {
-			System.out.println("titolo "+file[i].title+" tipo file: "+file[i].getClass());
+			System.out.println("titolo "+file[i].title+" tipo file: "+file[i].toString());
 		}
 
 		switch (selectFile) {
@@ -43,7 +43,8 @@ public class Main {
 				file[4].play();
 				break;
 			default:
-				String def = "Seleziona un nuovo file";
+				String def = "File non trovato.Seleziona un nuovo file";
+				System.out.println(def);
 		}
 	}
 }
